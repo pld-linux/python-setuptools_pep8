@@ -4,8 +4,8 @@
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
-Summary:	Setuptools revision control system plugin for Git
-Summary(pl.UTF-8):	Wtyczka setuptools do systemu kontroli wersji Git
+Summary:	pep8 command for setuptools
+Summary(pl.UTF-8):	Polecenie pep8 dla setuptools
 Name:		python-setuptools_pep8
 Version:	0.9.0
 Release:	1
@@ -36,34 +36,26 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a plugin for setuptools that enables pep8 integration. Once
-installed, Setuptools can be told to include in a package distribution
-all the files tracked by pep8. This is an alternative to explicit
-inclusion specifications with MANIFEST.in.
+This package exposes the pep8 style guide checker as a sub-command of
+setup.py.
 
 %description -l pl.UTF-8
-Ten pakiet zawiera wtyczkę do setuptools włączającą integrację z
-pep8em. Po zainstalowaniu jej, setuptools można przekazać, żeby
-dołączyć do dystrybucji pakietu wszystkie pliki śledzone przez pep8a -
-jest to alternatywa dla jawnego określenia plików w MANIFEST.in.
+Ten pakiet udostępnia sprawdzanie stylu wg pep8 jako podpolecenie
+setup.py.
 
 %package -n python3-setuptools_pep8
-Summary:	Setuptools revision control system plugin for Git
-Summary(pl.UTF-8):	Wtyczka setuptools do systemu kontroli wersji Git
+Summary:	pep8 command for setuptools
+Summary(pl.UTF-8):	Polecenie pep8 dla setuptools
 Group:		Libraries/Python
 Requires:	python3-modules >= 1:3.2
 
 %description -n python3-setuptools_pep8
-This is a plugin for setuptools that enables pep8 integration. Once
-installed, Setuptools can be told to include in a package distribution
-all the files tracked by pep8. This is an alternative to explicit
-inclusion specifications with MANIFEST.in.
+This package exposes the pep8 style guide checker as a sub-command of
+setup.py.
 
 %description -n python3-setuptools_pep8 -l pl.UTF-8
-Ten pakiet zawiera wtyczkę do setuptools włączającą integrację z
-pep8em. Po zainstalowaniu jej, setuptools można przekazać, żeby
-dołączyć do dystrybucji pakietu wszystkie pliki śledzone przez pep8a -
-jest to alternatywa dla jawnego określenia plików w MANIFEST.in.
+Ten pakiet udostępnia sprawdzanie stylu wg pep8 jako podpolecenie
+setup.py.
 
 %prep
 %setup -q -n setuptools-pep8-%{version}
