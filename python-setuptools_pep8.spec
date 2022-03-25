@@ -8,7 +8,7 @@ Summary:	pep8 command for setuptools
 Summary(pl.UTF-8):	Polecenie pep8 dla setuptools
 Name:		python-setuptools_pep8
 Version:	0.9.0
-Release:	3
+Release:	4
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/setuptools-pep8/
